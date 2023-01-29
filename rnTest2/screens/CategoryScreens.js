@@ -5,7 +5,9 @@ import { CATEGORIES } from "../data/dummy-data";
 const CategoryScreens = ({ navigation }) => {
   const renderCategoryItem = (itemData) => {
     const pressHandler = () => {
-      navigation.navigate("다른화면1");
+      navigation.navigate("MealsOverviewScreen", {
+        categoryId: itemData.item.id,
+      });
     };
 
     return (

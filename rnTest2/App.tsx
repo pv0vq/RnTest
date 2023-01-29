@@ -14,7 +14,10 @@ export default function App() {
       <NavigationContainer>
         <Stack.Navigator>
           <Stack.Screen name="카테고리" component={CategoryScreens} />
-          <Stack.Screen name="다른화면1" component={MealsOverviewScreen} />
+          <Stack.Screen
+            name="MealsOverviewScreen"
+            component={MealsOverviewScreen}
+          />
         </Stack.Navigator>
         {/* <CategoryScreens /> */}
       </NavigationContainer>
